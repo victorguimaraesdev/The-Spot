@@ -41,7 +41,7 @@ const NavLink = styled.a`
   font-weight: 500;
 
   &:hover {
-    color: #01175f;
+    color: #0B3F64;
   }
 `;
 

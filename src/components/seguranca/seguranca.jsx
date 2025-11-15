@@ -26,6 +26,7 @@ const Text = styled.p`
   font-size: 1.2rem;
   line-height: 1.6;
   color: #e6e6e6;
+  text-align: justify;
 `;
 
 export const Seguranca = () => {

@@ -35,24 +35,33 @@ const TextContent = styled.div`
     width: 90%;
 `;
 
-const H1 = styled.h1`
-        font-size: 48px;
-        margin-bottom: 20px;
-        font-weight: 700;
+const Logo = styled.img`
+  width: 700px;
+  height: auto;
 
-         @media (max-width: 768px) {
-            font-size: 20px;
-         }
+  @media (max-width: 768px) {
+    width: 150px;
+  }
 `;
 
-const P = styled.p`
-        font-size: 20px;
-        font-weight: 400;
+// const H1 = styled.h1`
+//         font-size: 48px;
+//         margin-bottom: 20px;
+//         font-weight: 700;
 
-         @media (max-width: 768px) {
-            font-size: 10px;
-         }
-`;
+//          @media (max-width: 768px) {
+//             font-size: 20px;
+//          }
+// `;
+
+// const P = styled.p`
+//         font-size: 20px;
+//         font-weight: 400;
+
+//          @media (max-width: 768px) {
+//             font-size: 10px;
+//          }
+// `;
 
 export const Banner = () => {
     return (
@@ -61,8 +70,8 @@ export const Banner = () => {
                 <Overlay />
                 <Img src="assets/img3.png" alt="Banner" />
                 <TextContent>
-                    <H1>The Spot</H1>
-                    <P>Moderno, seguro e pensado para você.</P>
+                    <Logo src="assets/logo2.png" alt="Logo" />
+                    {/* <P>Moderno, seguro e pensado para você.</P> */}
                 </TextContent>
             </ContainerImg>
         </Container>

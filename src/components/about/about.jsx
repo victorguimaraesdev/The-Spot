@@ -36,6 +36,8 @@ const TextBlock = styled.div`
   flex: 1;
 `;
 
+
+
 const H1 = styled.h1`
     font-size: 40px;
     color: #ec3058; 
@@ -48,6 +50,7 @@ const P = styled.p`
     line-height: 1.7;
     color: #444;
     font-weight: 400;
+    text-align: justify;
 `
 
 export const About = () => {
@@ -64,7 +67,6 @@ export const About = () => {
             design, segurança e funcionalidade em um único lugar.
           </P>
         </TextBlock>
-
         <Image src="assets/img4.jpg" alt="Imagem do The Spot" />
       </Content>
     </Container>

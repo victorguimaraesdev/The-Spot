@@ -47,7 +47,7 @@ const Card = styled.div`
 const IconCircle = styled.div`
   width: 70px;
   height: 70px;
-  background-color: #ec3058;
+  background-color: #ED3058;
   border-radius: 50%;
   display: flex;
   justify-content: center;
