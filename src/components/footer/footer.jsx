@@ -5,11 +5,11 @@ const FooterContainer = styled.footer`
   width: 100%;
   background-color: #111;
   color: #fff;
-  padding: 50px 20px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 45px;
 `;
 
 const FooterBrand = styled.h3`
@@ -18,6 +18,25 @@ const FooterBrand = styled.h3`
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
+`;
+
+const SectionsWrapper = styled.div`
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const SectionLink = styled.a`
+  color: #ccc;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: #fff;
+    transform: translateY(-3px);
+  }
 `;
 
 const LinksWrapper = styled.div`
@@ -38,7 +57,7 @@ const FooterLink = styled.a`
 
   svg {
     font-size: 22px;
-    color: #ED3058; /* detalhe em vermelho elegante */
+    color: #ED3058;
   }
 
   &:hover {
@@ -66,6 +85,15 @@ export const Footer = () => {
 
       <FooterBrand>THE SPOT</FooterBrand>
 
+      {/* Links para as seções internas */}
+      <SectionsWrapper>
+        <SectionLink href="#sobre">Sobre</SectionLink>
+        <SectionLink href="#vantagens">Vantagens</SectionLink>
+        <SectionLink href="#seguranca">Segurança</SectionLink>
+        <SectionLink href="#localizacao">Localização</SectionLink>
+      </SectionsWrapper>
+
+      {/* Contatos */}
       <LinksWrapper>
 
         <FooterLink
@@ -96,7 +124,6 @@ export const Footer = () => {
       <Copyright>
         © {new Date().getFullYear()} Residencial The Spot — Todos os direitos reservados.
       </Copyright>
-
     </FooterContainer>
   );
-}
+};
