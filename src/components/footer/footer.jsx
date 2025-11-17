@@ -85,7 +85,6 @@ export const Footer = () => {
 
       <FooterBrand>THE SPOT</FooterBrand>
 
-      {/* Links para as seções internas */}
       <SectionsWrapper>
         <SectionLink href="#sobre">Sobre</SectionLink>
         <SectionLink href="#vantagens">Vantagens</SectionLink>
@@ -93,7 +92,6 @@ export const Footer = () => {
         <SectionLink href="#localizacao">Localização</SectionLink>
       </SectionsWrapper>
 
-      {/* Contatos */}
       <LinksWrapper>
 
         <FooterLink

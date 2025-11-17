@@ -77,7 +77,7 @@ const P = styled.p`
 
 export const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Content>
 
         <TextBlock>

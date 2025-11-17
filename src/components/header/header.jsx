@@ -120,11 +120,12 @@ export const Header = () => {
       <Container>
         <Logo src="assets/logo.jpg" alt="Logo" />
         <Nav>
-          <NavLink href="#">Sobre</NavLink>
-          <NavLink href="#">Vantagens</NavLink>
-          <NavLink href="#">Segurança</NavLink>
-          <NavLink href="#">Localização</NavLink>
-          <NavLink href="#">Contato</NavLink>
+          <NavLink href="#about">Sobre</NavLink>
+          <NavLink href="#vantagem">Vantagens</NavLink>
+          <NavLink href="#seguranca">Segurança</NavLink>
+           <NavLink href="#gourmet">Gourmet</NavLink>
+          <NavLink href="#localizacao">Localização</NavLink>
+          <NavLink href="#contato">Contato</NavLink>
         </Nav>
         <Button>Fale Conosco</Button>
 

@@ -31,7 +31,7 @@ const Text = styled.p`
 
 export const Seguranca = () => {
   return (
-    <Container>
+    <Container id="seguranca">
       <Content>
         <Title>Segurança 24h para sua tranquilidade</Title>
 
