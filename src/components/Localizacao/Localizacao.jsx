@@ -7,6 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  background-color: #000000;
 `;
 
 const Title = styled.h2`
@@ -17,7 +18,7 @@ const Title = styled.h2`
 
 const Address = styled.p`
   font-size: 20px;
-  color: #555;
+  color: #ffffff;
   text-align: center;
 `;
 

@@ -50,27 +50,29 @@ const Description = styled.p`
   text-align: justify;
 `;
 
-export const Gourmet = () => {
+export const Lazer = () => {
   return (
-    <Container id="gourmet">
+    <Container id="lazer">
       <Wrapper>
+        <Image src="assets/img5.jpg" alt="Área de lazer com piscina do The Spot" />
 
         <TextBox>
-          <Title>Área Gourmet</Title>
+          <Title>Área de Lazer</Title>
           <Description>
-            A área gourmet do The Spot foi projetada para oferecer um ambiente
-            sofisticado e acolhedor, ideal para momentos únicos com amigos e
-            familiares.  
-            Com design moderno, acabamento de alto padrão e espaço amplo,
-            integra praticidade e elegância em cada detalhe. 
+            A área de lazer do The Spot foi cuidadosamente planejada para 
+            oferecer momentos únicos de relaxamento e diversão. Com uma 
+            piscina ampla e solarium aconchegante, é o ambiente perfeito 
+            para aproveitar os dias ensolarados em família.
 
-            Perfeita para confraternizações, celebrações ou encontros
-            informais, a área gourmet proporciona conforto, estilo e uma
-            experiência completa dentro do próprio condomínio — tudo para que
-            você viva o melhor de Ribeirão Preto com qualidade e exclusividade.
+            Além da piscina, o espaço conta com área gourmet equipada e 
+            playground infantil, proporcionando entretenimento para todas 
+            as idades. Cada detalhe foi pensado para garantir conforto, 
+            segurança e bem-estar aos moradores.
+
+            Viva experiências memoráveis sem sair de casa, em um ambiente 
+            que combina sofisticação e qualidade de vida em cada momento.
           </Description>
         </TextBox>
-      <Image src="assets/img6.jpg" alt="Área gourmet do The Spot" />
       </Wrapper>
     </Container>
   );

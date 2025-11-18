@@ -89,8 +89,10 @@ export const Footer = () => {
         <SectionLink href="#sobre">Sobre</SectionLink>
         <SectionLink href="#vantagens">Vantagens</SectionLink>
         <SectionLink href="#seguranca">Segurança</SectionLink>
+        <SectionLink href="#lazer">Lazer</SectionLink>
         <SectionLink href="#gourmet">Gourmet</SectionLink>
         <SectionLink href="#localizacao">Localização</SectionLink>
+        
       </SectionsWrapper>
 
       <LinksWrapper>

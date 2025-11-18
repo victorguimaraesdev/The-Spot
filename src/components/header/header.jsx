@@ -123,7 +123,8 @@ export const Header = () => {
           <NavLink href="#about">Sobre</NavLink>
           <NavLink href="#vantagem">Vantagens</NavLink>
           <NavLink href="#seguranca">Segurança</NavLink>
-           <NavLink href="#gourmet">Gourmet</NavLink>
+          <NavLink href="#lazer">Lazer</NavLink>
+          <NavLink href="#gourmet">Gourmet</NavLink>
           <NavLink href="#localizacao">Localização</NavLink>
           <NavLink href="#contato">Contato</NavLink>
         </Nav>
