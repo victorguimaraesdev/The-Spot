@@ -115,6 +115,10 @@ export const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const redirect = () => {
+    window.location.href = "https://www.instagram.com/residencialthespot?igsh=MXZya2tnOTdzM2xzMA%3D%3D";
+  };
+
   return (
     <>
       <Container>
@@ -128,7 +132,7 @@ export const Header = () => {
           <NavLink href="#localizacao">Localização</NavLink>
           <NavLink href="#contato">Contato</NavLink>
         </Nav>
-        <Button>Fale Conosco</Button>
+        <Button onClick={redirect}>Fale Conosco</Button>
 
         <MenuButton onClick={toggleMenu}>
           <span />
