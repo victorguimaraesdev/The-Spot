@@ -103,17 +103,6 @@ const Msg = styled.h1`
 `
 
 export const Contato = () => {
-  const [message, setMessage] = useState("");
-
-  const handleSendMessage = () => {
-    const phone = "5516999999999"; 
-
-    const finalMsg = `Olá! Vim pelo site do The Spot. Minha mensagem é: ${message}`;
-
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(finalMsg)}`;
-
-    window.open(url, "_blank");
-  };
 
   return (
     <Container id="contato">
@@ -127,21 +116,11 @@ export const Contato = () => {
           <FaInstagram />
           @residencialthespot
         </ContactItem>
-        <ContactItem href="tel:01633291710">
+        <ContactItem>
           <FaPhoneAlt />
           (16) 3329-1710
         </ContactItem>
       </ContactList>
-      <Msg>Fale Conosco</Msg>
-      <MessageBox
-        placeholder="Escreva sua mensagem para a equipe..."
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
-      <WhatsButton onClick={handleSendMessage}>
-        <FaWhatsapp />
-        Enviar para WhatsApp
-      </WhatsButton>
     </Container>
   );
 };
