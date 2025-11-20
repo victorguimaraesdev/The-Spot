@@ -25,7 +25,7 @@ O projeto foi construído com foco em:
 - ⚛ **React**
 - 🎨 **Styled-Components**
 - 🚀 **Vite**
-- 🧱 **JavaScript / TypeScript** *(dependendo da versão do seu projeto)*
+- 🧱 **JavaScript / TypeScript*
 - 🌐 HTML5 + CSS3
 
 ---
