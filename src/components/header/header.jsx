@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; 
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -19,6 +19,18 @@ const Container = styled.div`
   @media (max-width: 768px) {
     padding: 0 20px;
   }
+`;
+
+const SubContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+    @media (max-width: 768px) {
+      /* display: none; */
+      width: 30%;
+    }
 `;
 
 const Logo = styled.img`
@@ -126,22 +138,28 @@ export const Header = () => {
     if (typeof window === 'undefined') return;
     window.addEventListener('resize', closeMenu);
     return () => window.removeEventListener('resize', closeMenu);
-}, [isOpen]);
+  }, [isOpen]);
 
   return (
     <>
       <Container>
-        <Logo src="assets/logo.jpg" alt="Logo" />
-        <Nav>
-          <NavLink href="#about">Sobre</NavLink>
-          <NavLink href="#vantagem">Vantagens</NavLink>
-          <NavLink href="#seguranca">Segurança</NavLink>
-          <NavLink href="#lazer">Lazer</NavLink>
-          <NavLink href="#gourmet">Gourmet</NavLink>
-          <NavLink href="#localizacao">Localização</NavLink>
-          <NavLink href="#contato">Contato</NavLink>
-        </Nav>
-        <Button onClick={redirect}>Fale Conosco</Button>
+        <SubContainer>
+          <Logo src="assets/logo.jpg" alt="Logo" />
+        </SubContainer>
+        <SubContainer>
+          <Nav>
+            <NavLink href="#about">Sobre</NavLink>
+            <NavLink href="#vantagem">Vantagens</NavLink>
+            <NavLink href="#seguranca">Segurança</NavLink>
+            <NavLink href="#lazer">Lazer</NavLink>
+            <NavLink href="#gourmet">Gourmet</NavLink>
+            <NavLink href="#localizacao">Localização</NavLink>
+            <NavLink href="#contato">Contato</NavLink>
+          </Nav>
+        </SubContainer>
+        <SubContainer>
+          <Button onClick={redirect}>Fale Conosco</Button>
+        </SubContainer>
 
         <MenuButton onClick={toggleMenu}>
           <span />
