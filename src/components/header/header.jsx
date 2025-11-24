@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useState, useEffect } from "react"; 
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -121,6 +121,12 @@ export const Header = () => {
     window.location.href =
       "https://www.instagram.com/residencialthespot?igsh=MXZya2tnOTdzM2xzMA%3D%3D";
   };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    window.addEventListener('resize', closeMenu);
+    return () => window.removeEventListener('resize', closeMenu);
+}, [isOpen]);
 
   return (
     <>
