@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎧 THE SPOT — Landing Page Oficial
 
 O **THE SPOT** é uma landing page moderna, responsiva e totalmente desenvolvida com **React** e **Styled-Components**.  
@@ -65,3 +66,6 @@ Cada componente possui sua própria pasta e arquivo de estilo.
 
 ```bash
 git clone https://github.com/seu-usuario/the-spot.git
+=======
+
+>>>>>>> 1891cf238bb211a9bb9fc8332e22bcd814326d59
