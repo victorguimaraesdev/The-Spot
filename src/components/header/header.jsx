@@ -144,7 +144,6 @@ export const Header = () => {
         </MenuButton>
       </Container>
 
-      {/* MENU MOBILE */}
       <MobileMenu isOpen={isOpen}>
         <NavLink href="#about" onClick={closeMenu}>Sobre</NavLink>
         <NavLink href="#vantagem" onClick={closeMenu}>Vantagens</NavLink>
